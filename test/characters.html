@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="Testing A&TSI Langauge support on GFD">
+    <meta name="author" content="EL">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <style>
+        /* vietnamese */
+        /* @font-face {
+            font-family: 'Atsil';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/notosans/v7/o-0IIpQlx3QUlC5A4PNr6jRASf6M7VBj.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        } */
+        /* latin-ext */
+        
+        @font-face {
+            font-family: 'Atsil';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/notosans/v7/o-0IIpQlx3QUlC5A4PNr6zRASf6M7VBj.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        
+        @font-face {
+            font-family: 'Atsil';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/notosans/v7/o-0IIpQlx3QUlC5A4PNr5TRASf6M7Q.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        
+        @font-face {
+            font-family: 'LastResort';
+            src: url('../fonts/LastResort.woff2') format('woff2'), url('../fonts/LastResort..woff') format('woff'), url('../fonts/LastResort..ttf') format('truetype')
+        }
+        
+        #sample p {
+            font-size: 2.6rem;
+            text-align: center;
+        }
+        
+        .atsil {
+            font-family: Atsil, LastResort;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card fluid">
+                    <div id="sample">
+                        <p class="atsil">áÁ äÄ āĀ ḏḎ éÉ ëË ēĒ ìÌ íÍ īĪ ḻḺ ŋŊ ṉṈ ñÑ òÒ óÓ öÖ œŒ ṟṞ ṯṮ ùÙ úÚ ûÛ ūŪ ʼ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="">
+                    <div>
+                        <p>Extended Latin characters required to support a wide range of Aboriginal and Toress Strait Islander languages</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card fluid">
+                    <div id="sample">
+                        <p class="atsil">ʉɄ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="">
+                    <div>
+                        <p>Characters used in older orthographies that are not currently used.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
+<!-- https://minicss.org/docs -->
+
+
+<!--
+
+    sfntwoff : https://people-mozilla.org/~jkew/woff/
+ttf2woff : http://wizard.ae.krakow.pl/~jb/ttf2woff/
+
+https://www.calbasi.net/book/export/html/313
+
+https://github.com/ananthakumaran/webify
+
+https://dev.to/benjaminblack/converting-ttf-fonts-to-woff2-and-woff-3f5b
+
+https://unix.stackexchange.com/questions/358673/convert-in-command-line-an-sfd-file-fontforge-to-ttf-otf-woff-svg
+
+-->
